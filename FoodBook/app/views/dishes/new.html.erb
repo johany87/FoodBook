@@ -1,0 +1,21 @@
+<div class="contrainer">
+  <%= form_for @dish  do |f| %>
+
+    <div class="form-group">
+      <label for="dish_name">Name of the dish</label>
+      <input type="text" name="dish[name]" id="dish_name" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="dish_name">Price of the dish</label>
+      <input type="number" name="dish[price]" id="dish_price" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="dish_name">Origin of the dish</label>
+      <input type="text" name="dish[origin]" id="dish_origin" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+  <% end %>
+</div>

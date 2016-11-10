@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FoodBook</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <a class="navbar-brand" href="<%= root_path %>">FoodBook</a>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="<%= new_dish_path %>">New Dish</a></li>
+            <li><a href="<%= new_meal_path %>">New Meal</a></li>
+        </ul>
+       </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<h1 class="text-center" > Welcome to Social Network FoodBook </h1>
+<h2 class="text-center"> Our dish and meals</h2>
+<div class="container">
+  <section class="dishes">
+    <% @dishes.each do |d| %>
+    <article class="dish">
+      <ul>
+        <li><%= d.name %></li>
+        <li><%= d.price %></li>
+        <li><%= d.origin %></li>
+      </ul>
+    </article>
+    <% end if @dishes.any? %>
+  </section>
+
+  <section class="meals">
+    <% @meals.each do |m| %>
+    <article class="meal">
+      <ul>
+        <li><%= m.name %></li>
+        <li><%= m.price %></li>
+        <li><%= m.restaurant %></li>
+        <li><%= m.city %></li>
+      </ul>
+    </article>
+    <% end if @meals.any? %>
+  </section>
+</div>
