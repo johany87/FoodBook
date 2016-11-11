@@ -4,7 +4,6 @@ class MealsController < ApplicationController
     @meal = Meal.new
   end
 
-  def create
     def create
       meal = Meal.new(meal_params)
       if meal.save
@@ -13,7 +12,6 @@ class MealsController < ApplicationController
         redirect_to new_meal_path
       end
     end
-  end
 
   private
 
